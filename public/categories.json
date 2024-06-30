@@ -8,21 +8,21 @@
     },
     {
         "id":2,
-        "logo":"https://ibb.co/WcD7K3X",
+        "logos":"https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg",
         "category_name":"Creative Design",
         "availability":"100+ Jobs Available"
 
     },
     {
         "id":3,
-        "logo":"https://ibb.co/tBmxqQt",
+        "logos":"https://ibb.co/tBmxqQt",
         "category_name":"Marketing & Sales",
         "availability":"150 Jobs Available"
 
     },
     {
         "id":4,
-        "logo":"https://ibb.co/bH3vTD0",
+        "logos":"https://ibb.co/bH3vTD0",
         "category_name":"Engineering Job",
         "availability":"224 Jobs Available"
 
