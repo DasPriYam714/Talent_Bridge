@@ -15,7 +15,7 @@ const AppliedJobs = () => {
                     <p className="text-4xl font-extrabold mt-10">Featured Jobs</p>
                     <p className="font-medium mt-5 mb-10">Explore thousands of job opportunities with all the information you need. Its your future</p>
                 </section>
-                <div>
+                <div className="grid gird-cols-1 sm:grid-cols-2 gap-6">
                     {
                         jobs.map(job => <Job key={job.id} job={job}></Job> )
                     }
