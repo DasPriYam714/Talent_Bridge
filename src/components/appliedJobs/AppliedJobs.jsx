@@ -3,6 +3,7 @@ import Job from "./Job";
 
 const AppliedJobs = () => {
     const [jobs, setJobs]= useState([])
+    const [dataLength, setdataLength]= useState(4)
 
      useEffect(()=>{
         fetch('jobs.json')
@@ -17,9 +18,15 @@ const AppliedJobs = () => {
                 </section>
                 <div className="grid gird-cols-1 sm:grid-cols-2 gap-6">
                     {
-                        jobs.map(job => <Job key={job.id} job={job}></Job> )
+                        jobs.slice(0, dataLength).map(job => <Job key={job.id} job={job}></Job> )
                     }
 
+                </div>
+                <div className={dataLength === jobs.length ? 'hidden' : ''}>
+                    <button 
+                    onClick={()=> setdataLength(jobs.length)}
+                    className="justify-center"
+                    >View All</button>
                 </div>
         </div>
     );
