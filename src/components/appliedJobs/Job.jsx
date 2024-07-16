@@ -1,8 +1,9 @@
 import { GoLocation } from "react-icons/go";
 import { HiCurrencyBangladeshi } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 const Job = ({job}) => {
-    const {logo,company_name,job_title,job_description,remote_or_onsite,job_type,location,salary} =job;
+    const {id,logo,company_name,job_title,job_description,remote_or_onsite,job_type,location,salary} =job;
     return (
         <div className="card card-compact bg-base-100  shadow-xl">
         <figure>
@@ -23,7 +24,9 @@ const Job = ({job}) => {
             <h2 className="flex my-2 mr-2"><HiCurrencyBangladeshi className="text-3xl mr-2"></HiCurrencyBangladeshi>{salary}</h2>
           </div>
           <div className="card-actions ">
-            <button className="btn btn-primary">View details</button>
+           <Link to={`/jobdetails/${id}`}>
+           <button className="btn btn-primary">View details</button>
+           </Link>
           </div>
         </div>
       </div>
