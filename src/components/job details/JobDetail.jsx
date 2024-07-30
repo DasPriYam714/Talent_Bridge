@@ -6,6 +6,8 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 import { MdOutlinePhone } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 
 const JobDetail = () => {
@@ -16,6 +18,10 @@ const JobDetail = () => {
     const intId =parseInt(id)
     const job = jobs.find(job => job.id == intId);
     console.log(job);
+    const handleAppliedJob = () => {
+        toast('You applied successfully.')
+
+    }
     return (
         <div>
             <div>
@@ -83,9 +89,10 @@ const JobDetail = () => {
 
                     </div>
 
-                    <Link><button className="btn btn-primary text-lg font-semibold text-white w-full bg-gradient-to-r from-[#7E90FE] to-[#9873FF] ">Apply</button></Link>
+                    <Link><button onClick={handleAppliedJob} className="btn btn-primary text-lg font-semibold text-white w-full bg-gradient-to-r from-[#7E90FE] to-[#9873FF] ">Apply</button></Link>
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
 
         </div>
     );
