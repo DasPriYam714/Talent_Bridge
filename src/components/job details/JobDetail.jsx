@@ -18,7 +18,10 @@ const JobDetail = () => {
     console.log(job);
     return (
         <div>
-            <h2>Job details of:{job.job_title}</h2>
+            <div>
+                
+            </div>
+            <h2 className="text-center text-3xl font-bold py-10">Job Details </h2>
             <div className="grid gap-7 md:grid-cols-4 grid-cols-1">
                 <div className="  md:col-span-3">
                     <h2 className="font-bold text-lg pb-5">Job Description: <span className="font-medium text-[#757575]">{job.job_description}</span></h2>
@@ -39,9 +42,9 @@ const JobDetail = () => {
 
                 </div>
                 <div className=" flex flex-col justify-between"> 
-                    <div>
-                        <div>
-                        <h2 className="font-bold text-lg pb-6">Job Details:</h2>
+                    <div className="bg-gray-100 p-2">
+                        <div >
+                        <h2 className="font-bold text-lg pb-6">Job Details :</h2>
                         <div className="flex flex-row leading-4">
                            <p className="text-[#757575] text-md "><MdCurrencyExchange></MdCurrencyExchange></p> 
                             <h3 className="font-semibold text-[#474747] px-2">Salary :</h3>
@@ -60,7 +63,7 @@ const JobDetail = () => {
 
                         </div>
                         <div>
-                        <h2 className="font-bold text-lg pb-6">Contact Information :</h2>
+                        <h2 className="font-bold text-lg pb-6"> Contact Information :</h2>
                         <div className="flex flex-row leading-4">
                            <p className="text-[#757575] text-md "><MdOutlinePhone></MdOutlinePhone></p> 
                            <h3 className="font-semibold text-[#474747] px-2 pb-4">Phone : <span className="font-medium text-[#757575] pb-5 ">{job.contact_information.phone} </span></h3>
@@ -80,7 +83,7 @@ const JobDetail = () => {
 
                     </div>
 
-                    <Link><button className="btn btn-primary text-lg w-full bg-gradient-to-r from-indigo-500">Apply</button></Link>
+                    <Link><button className="btn btn-primary text-lg font-semibold text-white w-full bg-gradient-to-r from-[#7E90FE] to-[#9873FF] ">Apply</button></Link>
                 </div>
             </div>
 
