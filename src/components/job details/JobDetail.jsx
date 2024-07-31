@@ -36,16 +36,11 @@ const JobDetail = () => {
                     <h2 className="font-bold text-lg pb-3 ">Educational Requirement: </h2>
                         <span className="font-medium text-[#757575] pb-5">{job.educational_requirements}</span>
 
-
                     </div>
                     <div className="pb-5">
                     <h2 className="font-bold text-lg pb-3 ">Experiences: </h2>
                         <span className="font-medium text-[#757575] pb-5">{job.experiences}</span>
-
-
                     </div>
-                   
-
                 </div>
                 <div className=" flex flex-col justify-between"> 
                     <div className="bg-gray-100 p-2">
@@ -84,8 +79,6 @@ const JobDetail = () => {
                         </div>
 
                         </div>
-                       
-
 
                     </div>
 
